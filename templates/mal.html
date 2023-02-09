@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovedsiden</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <nav class="nav">
+        <a href="/">
+                                    
+            <img class="navbilde" src='{{url_for("static", filename="bilder/yr.png")}}' alt="">
+        </a>
+        <a href="/bergen">Bergen</a>
+        <a href="/oslo">Oslo</a>
+        <a href="/sandvika">Sandvika</a>
+        <a href="/tromsø">Tromsø</a>
+    </nav>
+    <main>
+        {% block main%}{%endblock%}
+    </main>
+</body>
+</html>
+
